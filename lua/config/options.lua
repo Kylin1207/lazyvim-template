@@ -7,8 +7,6 @@ vim.opt.wrap = true
 vim.opt.number = true
 vim.opt.encoding = "utf8"
 
-vim.g.python_host_prog = "/home/ira/software/miniforge3/envs/py310/bin/python"
-vim.g.python3_host_prog = "/home/ira/software/miniforge3/envs/py310/bin/python"
 vim.g.clipboard = {
   name = "WslClipboard",
   copy = {
