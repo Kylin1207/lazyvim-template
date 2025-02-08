@@ -17,42 +17,42 @@ vim.api.nvim_set_keymap(
 
 vim.api.nvim_set_keymap(
   "n",
-  "<C-S-C>",
+  "<C-S-c>",
   '"+y',
   { noremap = true, silent = true, desc = "Copy to system clipboard (normal mode)" }
 )
 
 vim.api.nvim_set_keymap(
   "v",
-  "<C-S-C>",
+  "<C-S-c>",
   '"+y',
   { noremap = true, silent = true, desc = "Copy to system clipboard (visual mode)" }
 )
 
 vim.api.nvim_set_keymap(
   "c",
-  "<C-S-C>",
+  "<C-S-c>",
   "<C-R>+",
   { noremap = true, silent = true, desc = "Copy to system clipboard (command mode)" }
 )
 
 vim.api.nvim_set_keymap(
   "n",
-  "<C-S-V>",
+  "<C-S-v>",
   '"+p',
   { noremap = true, silent = true, desc = "Paste from system clipboard (normal mode)" }
 )
 
 vim.api.nvim_set_keymap(
   "v",
-  "<C-S-V>",
+  "<C-S-v>",
   '"+p',
   { noremap = true, silent = true, desc = "Paste from system clipboard (visual mode)" }
 )
 
 vim.api.nvim_set_keymap(
   "c",
-  "<C-S-V>",
+  "<C-S-v>",
   "<C-R>+",
   { noremap = true, silent = true, desc = "Paste from system clipboard (command mode)" }
 )
