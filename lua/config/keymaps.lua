@@ -7,18 +7,28 @@ vim.api.nvim_set_keymap(
   ":vsplit<CR>:lua vim.lsp.buf.definition()<CR>",
   { noremap = true, silent = true, desc = "Open function definition in a horizontal split" }
 )
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<C-o>",
+  ":bd!<CR>:bp<CR>",
+  { noremap = true, silent = true, desc = "Close vsplit window and buffer, then jump back to source file" }
+)
+
 vim.api.nvim_set_keymap(
   "n",
   "<C-S-C>",
   '"+y',
   { noremap = true, silent = true, desc = "Copy to system clipboard (normal mode)" }
 )
+
 vim.api.nvim_set_keymap(
   "v",
   "<C-S-C>",
   '"+y',
   { noremap = true, silent = true, desc = "Copy to system clipboard (visual mode)" }
 )
+
 vim.api.nvim_set_keymap(
   "c",
   "<C-S-C>",
@@ -32,12 +42,14 @@ vim.api.nvim_set_keymap(
   '"+p',
   { noremap = true, silent = true, desc = "Paste from system clipboard (normal mode)" }
 )
+
 vim.api.nvim_set_keymap(
   "v",
   "<C-S-V>",
   '"+p',
   { noremap = true, silent = true, desc = "Paste from system clipboard (visual mode)" }
 )
+
 vim.api.nvim_set_keymap(
   "c",
   "<C-S-V>",
@@ -51,6 +63,7 @@ vim.api.nvim_set_keymap(
   ":lua require('custom.mark').add_global_mark()<CR>",
   { noremap = true, silent = true, desc = "Add a global mark" }
 )
+
 vim.api.nvim_set_keymap(
   "n",
   "<leader>md",
