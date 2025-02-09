@@ -17,7 +17,7 @@ return {
             Include = { fg = "#FFFF00" },
             Define = { fg = "#FFFF00" },
             PreCondit = { fg = "#FFFF00" },
-            Macro = { fg = "#F003BC", style = { "bold" } },
+            Macro = { fg = "#FC7EFC", style = { "bold" } },
             Constant = { fg = "#FFFFFF", style = { "bold" } },
             String = { fg = "#EFC3CA" },
             Special = { fg = "#F38BA8" },
@@ -26,7 +26,7 @@ return {
             Boolean = { link = "String" },
             Number = { link = "String" },
             Float = { link = "String" },
-            Type = { fg = "#5BDD26", style = { "underline" } },
+            Type = { fg = "#5BDD26" },
             Function = { fg = "#17E3EB" },
             -- keyword
             ["@keyword.return"] = { link = "Keyword" },
