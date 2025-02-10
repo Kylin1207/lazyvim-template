@@ -10,7 +10,7 @@ return {
             Keyword = { fg = "#FFFF00" },
             Conditional = { fg = "#FFFF00" },
             Repeat = { fg = "#FFFF00" },
-            Label = { fg = "#BCBBBB", style = { "italic" } },
+            Label = { fg = "#BCBBBB" },
             Operator = { fg = "#FFFF00" },
             Exception = { fg = "#FFFF00" },
             PreProc = { fg = "#FFFF00" },
@@ -31,10 +31,10 @@ return {
             -- keyword
             ["@keyword.return"] = { link = "Keyword" },
             ["@keyword.function"] = { link = "Keyword" },
+            ["@keyword.conditional"] = { link = "Keyword" },
             -- variable
             ["@variable"] = { fg = "#FFFFFF" },
             ["@variable.builtin"] = { link = "Keyword" },
-            ["@variable.member"] = { fg = "#FFFFFF", style = { "bold" } },
             ["@constant"] = { link = "Constant" },
             ["@constant.builtin"] = { link = "Constant" },
             ["@constant.macro"] = { link = "Macro" },
