@@ -18,7 +18,7 @@ return {
             Define = { fg = "#FFFF00" },
             PreCondit = { fg = "#FFFF00" },
             Macro = { fg = "#F86EE9", style = { "bold" } },
-            Constant = { fg = "#FFFFFF", style = { "bold" } },
+            Constant = { fg = "#FFFFFF", style = { "italic" } },
             String = { fg = "#6CE9AE" },
             Special = { fg = "#F38BA8" },
             Character = { link = "String" },
