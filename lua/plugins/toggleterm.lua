@@ -45,13 +45,14 @@ return {
         end,
         desc = "ToggleTerm (tab root_dir)",
       },
-      -- {
-      --   "<leader>TT",
-      --   function()
-      --     require("toggleterm").toggle(1, 100, vim.loop.cwd(), "tab")
-      --   end,
-      --   desc = "ToggleTerm (tab cwd_dir)",
-      -- },
+      {
+        "<Esc><Esc>",
+        "<C-\\><C-n>",
+        mode = "t",
+        noremap = true,
+        silent = true,
+        desc = "Exit Terminal Mode to Normal Mode",
+      },
     },
     opts = {
       -- size can be a number or function which is passed the current terminal
@@ -62,6 +63,9 @@ return {
           return vim.o.columns * 0.4
         end
       end,
+      winbar = {
+        enabled = true,
+      },
       open_mapping = [[<c-\>]],
       -- on_open = fun(t: Terminal), -- function to run when the terminal opens
       -- on_close = fun(t: Terminal), -- function to run when the terminal closes
